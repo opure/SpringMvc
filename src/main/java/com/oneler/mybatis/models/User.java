@@ -3,11 +3,33 @@ package com.oneler.mybatis.models;
 public class User {
     private Integer id;
 
-    private String username;
+    private String userName;
 
-    private Integer userage;
+    public String getUserName() {
+		return userName;
+	}
 
-    private String useraddress;
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getUserAddress() {
+		return userAddress;
+	}
+
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
+	}
+
+	public void setUserAge(Integer userAge) {
+		this.userAge = userAge;
+	}
+
+
+
+	private Integer userAge;
+
+    private String userAddress;
 
     public Integer getId() {
         return id;
@@ -17,27 +39,11 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+
+
+    public Integer getUserAge() {
+        return userAge;
     }
 
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
-    }
 
-    public Integer getUserage() {
-        return userage;
-    }
-
-    public void setUserage(Integer userage) {
-        this.userage = userage;
-    }
-
-    public String getUseraddress() {
-        return useraddress;
-    }
-
-    public void setUseraddress(String useraddress) {
-        this.useraddress = useraddress == null ? null : useraddress.trim();
-    }
 }

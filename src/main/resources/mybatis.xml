@@ -4,7 +4,8 @@
 <configuration>
     <typeAliases> 
         <typeAlias alias="User" type="com.oneler.mybatis.models.User"/> 
-         <typeAlias alias="Article" type="com.oneler.mybatis.models.Article"/> 
+        <typeAlias alias="Article" type="com.oneler.mybatis.models.Article"/> 
+        <typeAlias alias="Category" type="com.oneler.mybatis.models.Category"/> 
     </typeAliases> 
     <environments default="development">
         <environment id="development">
@@ -18,6 +19,8 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="com/oneler/mybatis/models/User.xml"></mapper>
+        <mapper resource="com/oneler/mybatis/mapper/UserMapper.xml"></mapper>
+        <mapper resource="com/oneler/mybatis/mapper/CategoryMapper.xml"></mapper>
+        <mapper resource="com/oneler/mybatis/mapper/ArticleMapper.xml"></mapper>
     </mappers>
 </configuration>
