@@ -1,6 +1,6 @@
 package com.oneler.mybatis.inter;
 
-import com.oneler.mybatis.models.Category;
+import com.oneler.mybatis.mapper.Category;
 
 public interface CategoryMapper {
     int deleteByPrimaryKey(Integer id);

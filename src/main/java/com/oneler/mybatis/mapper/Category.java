@@ -1,4 +1,4 @@
-package com.oneler.mybatis.models;
+package com.oneler.mybatis.mapper;
 
 public class Category {
     private Integer id;

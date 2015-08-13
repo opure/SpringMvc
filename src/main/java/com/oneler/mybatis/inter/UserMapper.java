@@ -1,6 +1,6 @@
 package com.oneler.mybatis.inter;
 
-import com.oneler.mybatis.models.User;
+import com.oneler.mybatis.mapper.User;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
