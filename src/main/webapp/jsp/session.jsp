@@ -28,6 +28,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <%
     out.getBufferSize();
     out.print(page.getClass());
+    
      %>
      <%=page.toString() %><br>
      <%=request.getCharacterEncoding() %><br>
@@ -38,7 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      <%=request.getRemoteHost() %><br>
      <%=request.getServerName() %><br>
      <%=request.getSession() %><br>
-     <%=request.getServletPath() %><br>
+     <%=request.getServletPath	() %><br>
      <%=session.getServletContext() %>
      <%=session.getAttribute("nihao") %>
      
